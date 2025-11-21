@@ -67,7 +67,7 @@ export default function ProgressStepper({ currentStage, onStageClick }: Progress
                 {index < stages.length - 1 && (
                   <div
                     className={cn(
-                      "h-0.5 flex-1 mx-1 md:mx-2 transition-colors",
+                      "h-0.5 flex-1 mx-1 md:mx-2 transition-all duration-300",
                       index < currentIndex ? "bg-primary" : "bg-border"
                     )}
                     data-testid={`progress-line-${index}`}
